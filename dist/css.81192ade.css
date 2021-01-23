@@ -226,9 +226,13 @@ header .container .header_details .container .get_started {
     max-width: 500px;
   }
 }
+.first_section .container {
+  padding-bottom: 40px;
+}
 .first_section .container .header {
   max-width: 90%;
   margin: auto;
+  padding-bottom: 30px;
 }
 .first_section .container .header h2 {
   font-family: "BeVietnam_bold";
@@ -238,6 +242,7 @@ header .container .header_details .container .get_started {
   color: #242d52;
   text-align: center;
   padding-bottom: 10px;
+  line-height: 36px;
 }
 .first_section .container .header p {
   font-family: "BeVietnam_Regular";
@@ -246,8 +251,31 @@ header .container .header_details .container .get_started {
   font-weight: 500;
   color: #9095a7;
   text-align: center;
-  padding-bottom: 20px;
 }
+.first_section .container .articles {
+  max-width: 90%;
+  margin: auto;
+}
+.first_section .container .articles article h3 {
+  font-family: "BeVietnam_Bold";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  color: #242d52;
+  line-height: 30px;
+  padding-bottom: 10px;
+}
+.first_section .container .articles article p {
+  font-family: "BeVietnam_Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  color: #9095a7;
+}
+.first_section .container .articles article:not(:last-of-type) {
+  padding-bottom: 30px;
+}
+
 @media (min-width: 720px) {
   .first_section .container {
     max-width: 80%;
@@ -267,6 +295,10 @@ header .container .header_details .container .get_started {
     text-align: left;
     padding-bottom: 0;
     max-width: 340px;
+  }
+  .first_section .container .articles {
+    max-width: 100%;
+    margin: auto;
   }
 }
 
