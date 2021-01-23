@@ -32,7 +32,7 @@ header .container .sub_header {
   margin: auto;
   display: flex;
   flex-direction: row;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -71,14 +71,11 @@ header .container .sub_header .header_input:checked ~ .header_navigation ul li {
   padding: 10px 0;
 }
 header .container .sub_header .header_input:checked ~ .header_navigation ul li a {
-  font-family: "PublicSans-Regular";
+  font-family: "BeVietnam_Bold";
   font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
+  font-weight: 700;
+  font-size: 16px;
   color: #242d52;
-}
-header .container .sub_header .header_input:checked ~ .header_navigation ul li a:hover {
-  color: #9095a7;
 }
 header .container .sub_header .open_menu svg {
   position: absolute;
@@ -139,7 +136,8 @@ header .container .header_details .container .get_started {
   cursor: pointer;
   border-radius: 21px;
 }
-@media (min-width: 850px) {
+
+@media (min-width: 940px) {
   header .container .sub_header {
     max-width: 80%;
     margin: auto;
@@ -168,20 +166,18 @@ header .container .header_details .container .get_started {
     flex-direction: row;
   }
   header .container .sub_header .header_navigation ul li {
-    padding: 0;
-    font-family: "PublicSans-Regular";
-    font-style: normal;
-    font-weight: 500;
+    padding: 40px 0;
   }
   header .container .sub_header .header_navigation ul li a {
-    font-size: 18px;
-    display: inline-block;
-    font-weight: 600;
+    font-family: "BeVietnam_Bold";
+    font-size: 16px;
+    font-weight: 700;
     padding-top: 40px;
     padding-bottom: 40px;
-    color: #242d52;
     text-decoration: none;
     cursor: pointer;
+    white-space: nowrap;
+    color: #242d52;
   }
   header .container .sub_header .header_navigation ul li a:hover {
     color: #9095a7;
@@ -201,14 +197,14 @@ header .container .header_details .container .get_started {
     color: white;
     background: #f25f3a;
     outline: none;
-    padding: 15px 20px;
+    padding: 15px 30px;
     box-sizing: border-box;
     border: none;
     cursor: pointer;
     border-radius: 21px;
   }
   header .container .sub_header .get_started:hover {
-    background: #f25f3a;
+    background: #e98e77;
   }
   header .container .header_details {
     padding-bottom: 150px;

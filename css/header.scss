@@ -5,7 +5,7 @@ header {
             margin: auto;
             display: flex;
             flex-direction: row;
-            align-items: baseline;
+            align-items: center;
             justify-content: space-between;
             padding-top: 30px;
             padding-bottom: 30px;
@@ -40,14 +40,11 @@ header {
                     li {
                         padding: 10px 0;
                         a {
-                            font-family: "PublicSans-Regular";
+                            font-family: "BeVietnam_Bold";
                             font-style: normal;
-                            font-weight: 500;
-                            font-size: 18px;
-                            color: hsl(228, 39%, 23%);
-                            }
-                            a:hover {
-                                color:  hsl(227, 12%, 61%);
+                            font-weight: 700;
+                            font-size: 16px;
+                            color:hsl(228, 39%, 23%);
                         }
                     }
                 }
@@ -110,15 +107,15 @@ header {
                     cursor: pointer;
                     border-radius: 21px;
                 }
-                .get_started:hover{
+                // .get_started:hover{
                     
-                }
+                // }
             }
         }
     }
 }
 
-@media(min-width: 850px) {
+@media(min-width: 940px) {
     header {
         .container {
             .sub_header {
@@ -146,22 +143,20 @@ header {
                         display: flex;
                         flex-direction: row;
                         li {
-                            padding: 0;
-                            font-family: "PublicSans-Regular";
-                            font-style: normal;
-                            font-weight: 500;
+                            padding: 40px 0;
                             a {
-                                font-size: 18px;
-                                display: inline-block;
-                                font-weight: 600;
+                                font-family: "BeVietnam_Bold";
+                                font-size: 16px;
+                                font-weight: 700;
                                 padding-top: 40px;
                                 padding-bottom: 40px;
-                                color: hsl(228, 39%, 23%);
                                 text-decoration: none; 
                                 cursor: pointer;
-                                }
-                                a:hover {
-                                    color:  hsl(227, 12%, 61%);
+                                white-space: nowrap;
+                                color:  hsl(228, 39%, 23%);
+                            }
+                            a:hover {
+                                color:  hsl(227, 12%, 61%);
                             }
                         }
                         li:not(:last-of-type) {
@@ -181,14 +176,14 @@ header {
                     color: hsl(0, 0%, 100%);
                     background:  hsl(12, 88%, 59%);
                     outline: none;
-                    padding:15px 20px;
+                    padding:15px 30px;
                     box-sizing: border-box;
                     border: none;
                     cursor: pointer;
                     border-radius: 21px;
                 }
                 .get_started:hover{
-                    background:  hsl(12, 88%, 59%);
+                    background:  hsl(12, 72%, 69%);
                 }
             }
             .header_details {
