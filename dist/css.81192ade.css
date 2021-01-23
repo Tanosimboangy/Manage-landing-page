@@ -106,38 +106,87 @@ header .container .header_details .container {
   flex-direction: column;
   align-items: center;
 }
-header .container .header_details .container h1 {
-  font-family: "PublicSans-Regular";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 36px;
-  color: #2d314d;
-  padding-top: 250px;
-  padding-bottom: 30px;
+header .container .header_details .container .header_image {
+  max-width: 70%;
+  height: auto;
 }
-header .container .header_details .container p {
-  font-family: "PublicSans-Regular";
+header .container .header_details .container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .container .header_details .container div h1 {
+  font-family: "BeVietnam_Regular";
   font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
+  font-weight: 700;
+  font-size: 40px;
+  color: #2d314d;
+  padding-top: 2 0px;
+  padding-bottom: 40px;
+  max-width: 450px;
+  text-align: left;
+}
+header .container .header_details .container div p {
+  font-family: "BeVietnam_Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
   color: #9698a6;
   opacity: 0.8;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
+  max-width: 350px;
+  text-align: left;
 }
-header .container .header_details .container .get_started {
+header .container .header_details .container div .get_started {
   display: block;
   text-align: center;
   color: white;
   background: #f25f3a;
   outline: none;
-  padding: 15px 20px;
+  padding: 15px 30px;
   box-sizing: border-box;
   border: none;
   cursor: pointer;
   border-radius: 21px;
 }
+header .container .header_details .container div .get_started:hover {
+  background: #e98e77;
+}
 
-@media (min-width: 940px) {
+@media (min-width: 800px) {
+  header .container .header_details {
+    max-width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  header .container .header_details .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 100%;
+    margin: auto;
+  }
+  header .container .header_details .container .header_image {
+    order: 2;
+    max-width: 70%;
+  }
+  header .container .header_details .container div {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    order: 1;
+  }
+  header .container .header_details .container div h1 {
+    text-align: left;
+    font-size: 44px;
+  }
+  header .container .header_details .container div p {
+    text-align: left;
+  }
+}
+@media (min-width: 900px) {
   header .container .sub_header {
     max-width: 80%;
     margin: auto;
@@ -183,7 +232,7 @@ header .container .header_details .container .get_started {
     color: #9095a7;
   }
   header .container .sub_header .header_navigation ul li:not(:last-of-type) {
-    margin-right: 16px;
+    margin-right: 5%;
   }
   header .container .sub_header .open_menu svg {
     display: none;
@@ -197,7 +246,7 @@ header .container .header_details .container .get_started {
     color: white;
     background: #f25f3a;
     outline: none;
-    padding: 15px 30px;
+    padding: 15px 20px;
     box-sizing: border-box;
     border: none;
     cursor: pointer;
@@ -206,32 +255,13 @@ header .container .header_details .container .get_started {
   header .container .sub_header .get_started:hover {
     background: #e98e77;
   }
-  header .container .header_details {
-    padding-bottom: 150px;
-  }
-  header .container .header_details .container {
-    max-width: 80%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  header .container .header_details .container h1 {
-    text-align: left;
-    max-width: 400px;
-    font-size: 46px;
-  }
-  header .container .header_details .container p {
-    font-size: 23px;
-    max-width: 500px;
-  }
 }
 .first_section .container {
   padding-bottom: 40px;
 }
 .first_section .container .header {
-  max-width: 90%;
-  margin: auto;
+  margin-left: 5%;
+  margin-right: 5%;
   padding-bottom: 30px;
 }
 .first_section .container .header h2 {
@@ -241,64 +271,184 @@ header .container .header_details .container .get_started {
   font-weight: 700;
   color: #242d52;
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   line-height: 36px;
+  max-width: 380px;
+  margin: auto;
 }
 .first_section .container .header p {
   font-family: "BeVietnam_Regular";
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   color: #9095a7;
   text-align: center;
-}
-.first_section .container .articles {
-  max-width: 90%;
+  max-width: 340px;
   margin: auto;
+}
+.first_section .container .articles article {
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .first_section .container .articles article h3 {
   font-family: "BeVietnam_Bold";
-  font-size: 28px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
   color: #242d52;
   line-height: 30px;
-  padding-bottom: 10px;
+  max-width: 380px;
+  background-color: #ffefeb;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  padding-bottom: 2px;
+}
+.first_section .container .articles article h3 span {
+  background-color: #f25f3a;
+  padding: 2px 10px;
+  border-radius: 16px;
+  margin-right: 10px;
 }
 .first_section .container .articles article p {
   font-family: "BeVietnam_Regular";
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   color: #9095a7;
+  padding-top: 10px;
+  max-width: 360px;
 }
 .first_section .container .articles article:not(:last-of-type) {
   padding-bottom: 30px;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   .first_section .container {
     max-width: 80%;
     margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 20px;
   }
   .first_section .container .header {
-    max-width: 100%;
-    margin: auto;
+    margin: 0;
   }
   .first_section .container .header h2 {
     text-align: left;
     padding-bottom: 20px;
-    max-width: 400px;
     line-height: 40px;
   }
   .first_section .container .header p {
     text-align: left;
     padding-bottom: 0;
     max-width: 340px;
+    margin: 0;
   }
-  .first_section .container .articles {
-    max-width: 100%;
+  .first_section .container .articles article {
+    margin: 0;
+  }
+  .first_section .container .articles article h3 {
+    background-color: white;
+    border-radius: 0;
+    padding-bottom: 0;
+  }
+  .first_section .container .articles article p {
+    max-width: 450px;
+    margin-left: 56px;
+  }
+}
+.second_section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.second_section .container h2 {
+  font-family: "BeVietnam_bold";
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  color: #242d52;
+  text-align: center;
+  line-height: 36px;
+  padding-bottom: 80px;
+}
+.second_section .container .articles article {
+  position: relative;
+  background-color: #fafafa;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 0 16px 30px 16px;
+  margin-bottom: 50px;
+}
+.second_section .container .articles article img {
+  width: 70px;
+  position: absolute;
+  top: -35px;
+  left: calc(50% - 35px);
+}
+.second_section .container .articles article h4 {
+  font-family: "BeVietnam_bold";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  color: #242d52;
+  text-align: center;
+  line-height: 36px;
+  padding-top: 40px;
+}
+.second_section .container .articles article p {
+  font-family: "BeVietnam_Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  color: #9095a7;
+  text-align: center;
+  max-width: 340px;
+  margin: auto;
+  padding-top: 10px;
+}
+.second_section .container .get_started {
+  display: block;
+  text-align: center;
+  color: white;
+  background: #f25f3a;
+  outline: none;
+  padding: 15px 30px;
+  box-sizing: border-box;
+  border: none;
+  cursor: pointer;
+  border-radius: 21px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.second_section .container .get_started:hover {
+  background: #e98e77;
+}
+
+@media (min-width: 720px) {
+  .second_section .container {
+    max-width: 80%;
     margin: auto;
+  }
+  .second_section .container .articles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    overflow-x: scroll;
+    overflow: auto;
+  }
+  .second_section .container .articles article {
+    position: relative;
+    background-color: #fafafa;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    margin-bottom: 50px;
   }
 }
 

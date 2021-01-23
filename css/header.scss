@@ -77,45 +77,97 @@ header {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                h1 {
-                    font-family: "PublicSans-Regular";
-                    font-style: normal;
-                    font-weight: 500;
-                    font-size: 36px;
-                    color: hsl(233, 26%, 24%);
-                    padding-top: 250px;
-                    padding-bottom: 30px;
+                .header_image {
+                    max-width: 70%;
+                    height: auto;
                 }
-                p {
-                    font-family: "PublicSans-Regular";
-                    font-style: normal;
-                    font-weight: 500;
-                    font-size: 18px;
-                    color: hsl(233, 8%, 62%);
-                    opacity: .8;
-                    padding-bottom: 30px;
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    h1 {
+                        font-family: "BeVietnam_Regular";
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 40px;
+                        color: hsl(233, 26%, 24%);
+                        padding-top: 2  0px;
+                        padding-bottom: 40px;
+                        max-width: 450px;
+                        text-align: left;
+                    }
+                    p {
+                        font-family: "BeVietnam_Regular";
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: hsl(233, 8%, 62%);
+                        opacity: .8;
+                        padding-bottom: 40px;
+                        max-width: 350px;
+                        text-align: left;
+                    }
+                    .get_started {
+                        display: block;
+                        text-align: center;
+                        color: hsl(0, 0%, 100%);
+                        background:  hsl(12, 88%, 59%);
+                        outline: none;
+                        padding:15px 30px;
+                        box-sizing: border-box;
+                        border: none;
+                        cursor: pointer;
+                        border-radius: 21px;
+                    }
+                    .get_started:hover{
+                        background:  hsl(12, 72%, 69%);
+                    }
                 }
-                .get_started {
-                    display: block;
-                    text-align: center;
-                    color: hsl(0, 0%, 100%);
-                    background:  hsl(12, 88%, 59%);
-                    outline: none;
-                    padding:15px 20px;
-                    box-sizing: border-box;
-                    border: none;
-                    cursor: pointer;
-                    border-radius: 21px;
-                }
-                // .get_started:hover{
-                    
-                // }
             }
         }
     }
 }
 
-@media(min-width: 940px) {
+
+@media(min-width: 800px) {
+    header {
+        .container {
+            .header_details {
+                max-width: 80%;
+                margin: auto;
+                padding-top: 50px;
+                padding-bottom: 100px;
+                .container {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    max-width: 100%;
+                    margin: auto;
+                    .header_image {
+                        order: 2;
+                        max-width: 70%;
+                    }
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: baseline;
+                        order: 1;
+                        h1 {
+                            text-align: left;
+                            font-size: 44px;
+                        }
+                        p {
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 900px) {
     header {
         .container {
             .sub_header {
@@ -160,7 +212,7 @@ header {
                             }
                         }
                         li:not(:last-of-type) {
-                            margin-right: 16px;
+                            margin-right: 5%;
                         }
                     }
                 }   
@@ -176,7 +228,7 @@ header {
                     color: hsl(0, 0%, 100%);
                     background:  hsl(12, 88%, 59%);
                     outline: none;
-                    padding:15px 30px;
+                    padding:15px 20px;
                     box-sizing: border-box;
                     border: none;
                     cursor: pointer;
@@ -184,25 +236,6 @@ header {
                 }
                 .get_started:hover{
                     background:  hsl(12, 72%, 69%);
-                }
-            }
-            .header_details {
-                padding-bottom: 150px;
-                .container {
-                    max-width: 80%;
-                    margin: auto;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    h1 {
-                        text-align: left;
-                        max-width: 400px;
-                        font-size: 46px;
-                    }
-                    p {
-                        font-size: 23px;
-                        max-width: 500px;
-                    }
                 }
             }
         }

@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import img from '../images/illustration-intro.svg';
 
 function Header() {
     return (
@@ -26,9 +27,12 @@ function Header() {
                 </div>
                 <div className="header_details">
                     <div className="container">
-                        <h1>Bring everyone together to build better products.</h1>
-                        <p>Manage make it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view..</p>
-                        <button type="button" className="get_started">Get Started</button>
+                        <img className="header_image" src={img} alt="image"/>
+                        <div>
+                            <h1>Bring everyone together to build better products.</h1>
+                            <p>Manage make it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view..</p>
+                            <button type="button" className="get_started">Get Started</button>
+                        </div>
                     </div>
                 </div>
             </div>

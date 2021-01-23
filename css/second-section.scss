@@ -1,0 +1,99 @@
+.second_section {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+            font-family: "BeVietnam_bold";
+            font-size: 34px;
+            font-style: normal;
+            font-weight: 700;
+            color: hsl(228, 39%, 23%);
+            text-align: center;
+            line-height: 36px;
+            padding-bottom: 80px;
+        }
+        .articles {
+            article {
+                position: relative;
+                background-color:  hsl(0, 0%, 98%);
+                margin-left: 5%;
+                margin-right: 5%;
+                padding: 0 16px 30px 16px;
+                margin-bottom: 50px;
+                img {
+                    width: 70px;
+                    position: absolute;
+                    top: -35px;
+                    left: calc(50% - 35px);
+                }
+                h4 {
+                    font-family: "BeVietnam_bold";
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 700;
+                    color: hsl(228, 39%, 23%);
+                    text-align: center;
+                    line-height: 36px;
+                    padding-top: 40px;
+                }
+                p {
+                    font-family: "BeVietnam_Regular";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    color: hsl(227, 12%, 61%);
+                    text-align: center;
+                    max-width: 340px;
+                    margin: auto;
+                    padding-top: 10px;
+                }
+            }
+        }
+        .get_started {
+            display: block;
+            text-align: center;
+            color: hsl(0, 0%, 100%);
+            background:  hsl(12, 88%, 59%);
+            outline: none;
+            padding:15px 30px;
+            box-sizing: border-box;
+            border: none;
+            cursor: pointer;
+            border-radius: 21px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .get_started:hover{
+            background:  hsl(12, 72%, 69%);
+        }
+    }
+}
+
+@media(min-width: 720px) {
+    .second_section {
+        .container {
+            max-width: 80%;
+            margin: auto;
+            .articles {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 10px;
+                // flex-wrap: wrap;
+                overflow-x: scroll;
+                overflow: auto;
+                article {
+                    position: relative;
+                    background-color:  hsl(0, 0%, 98%);
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding: 0;
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
+}

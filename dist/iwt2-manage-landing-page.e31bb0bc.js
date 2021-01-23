@@ -29772,7 +29772,9 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"components/Header.js":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"images/illustration-intro.svg":[function(require,module,exports) {
+module.exports = "/illustration-intro.1ae4e850.svg";
+},{}],"components/Header.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -29781,6 +29783,8 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
+
+var _illustrationIntro = _interopRequireDefault(require("../images/illustration-intro.svg"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -29857,15 +29861,19 @@ function Header() {
     className: "header_details"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "container"
-  }, /*#__PURE__*/_react.default.createElement("h1", null, "Bring everyone together to build better products."), /*#__PURE__*/_react.default.createElement("p", null, "Manage make it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.."), /*#__PURE__*/_react.default.createElement("button", {
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    className: "header_image",
+    src: _illustrationIntro.default,
+    alt: "image"
+  }), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h1", null, "Bring everyone together to build better products."), /*#__PURE__*/_react.default.createElement("p", null, "Manage make it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.."), /*#__PURE__*/_react.default.createElement("button", {
     type: "button",
     className: "get_started"
-  }, "Get Started")))));
+  }, "Get Started"))))));
 }
 
 var _default = Header;
 exports.default = _default;
-},{"react":"node_modules/react/index.js"}],"components/First_section.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../images/illustration-intro.svg":"images/illustration-intro.svg"}],"components/First_section.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -29886,12 +29894,20 @@ function First_section() {
     className: "header"
   }, /*#__PURE__*/_react.default.createElement("h2", null, "What's different about Manage?"), /*#__PURE__*/_react.default.createElement("p", null, "Manage provides all the functionality your team needs. Without the complexity. Our software is taillor-made for modern digital product teams.")), /*#__PURE__*/_react.default.createElement("div", {
     className: "articles"
-  }, /*#__PURE__*/_react.default.createElement("article", null, /*#__PURE__*/_react.default.createElement("h3", null, "Track company-wide progress"), /*#__PURE__*/_react.default.createElement("p", null, "See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the biggest picture again.")), /*#__PURE__*/_react.default.createElement("article", null, /*#__PURE__*/_react.default.createElement("h3", null, "Advanced built-in reports"), /*#__PURE__*/_react.default.createElement("p", null, "Set internal delivery estimates and track progress toward company goals. Our custommisable dashboard helps you build out the reports you need to keep key stakeholders informed.")), /*#__PURE__*/_react.default.createElement("article", null, /*#__PURE__*/_react.default.createElement("h3", null, "Everything you need in one place"), /*#__PURE__*/_react.default.createElement("p", null, "Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.")))));
+  }, /*#__PURE__*/_react.default.createElement("article", null, /*#__PURE__*/_react.default.createElement("h3", null, /*#__PURE__*/_react.default.createElement("span", null, "01"), "Track company-wide progress"), /*#__PURE__*/_react.default.createElement("p", null, "See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the biggest picture again.")), /*#__PURE__*/_react.default.createElement("article", null, /*#__PURE__*/_react.default.createElement("h3", null, /*#__PURE__*/_react.default.createElement("span", null, "02"), "Advanced built-in reports"), /*#__PURE__*/_react.default.createElement("p", null, "Set internal delivery estimates and track progress toward company goals. Our custommisable dashboard helps you build out the reports you need to keep key stakeholders informed.")), /*#__PURE__*/_react.default.createElement("article", null, /*#__PURE__*/_react.default.createElement("h3", null, /*#__PURE__*/_react.default.createElement("span", null, "03"), "Everything you need in one place"), /*#__PURE__*/_react.default.createElement("p", null, "Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.")))));
 }
 
 var _default = First_section;
 exports.default = _default;
-},{"react":"node_modules/react/index.js"}],"components/Second_section.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js"}],"images/avatar-anisha.png":[function(require,module,exports) {
+module.exports = "/avatar-anisha.0b880032.png";
+},{}],"images/avatar-ali.png":[function(require,module,exports) {
+module.exports = "/avatar-ali.61420d53.png";
+},{}],"images/avatar-richard.png":[function(require,module,exports) {
+module.exports = "/avatar-richard.e86f8008.png";
+},{}],"images/avatar-shanai.png":[function(require,module,exports) {
+module.exports = "/avatar-shanai.eaf7bd35.png";
+},{}],"components/Second_section.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -29900,6 +29916,14 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = Second_section;
 
 var _react = _interopRequireDefault(require("react"));
+
+var _avatarAnisha = _interopRequireDefault(require("../images/avatar-anisha.png"));
+
+var _avatarAli = _interopRequireDefault(require("../images/avatar-ali.png"));
+
+var _avatarRichard = _interopRequireDefault(require("../images/avatar-richard.png"));
+
+var _avatarShanai = _interopRequireDefault(require("../images/avatar-shanai.png"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -29910,12 +29934,24 @@ function Second_section() {
     className: "container"
   }, /*#__PURE__*/_react.default.createElement("h2", null, "What they've said"), /*#__PURE__*/_react.default.createElement("div", {
     className: "articles"
-  }, /*#__PURE__*/_react.default.createElement("article", null, /*#__PURE__*/_react.default.createElement("h4", null, "Anisha Li"), /*#__PURE__*/_react.default.createElement("p", null, "\"Manage has supercharged our team's workflow. The ability to maintain visibility on larger milestones at all time keeps everyone motivated.\"")), /*#__PURE__*/_react.default.createElement("article", null, /*#__PURE__*/_react.default.createElement("h4", null, "Ali Bravo"), /*#__PURE__*/_react.default.createElement("p", null, "\"We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.\"")), /*#__PURE__*/_react.default.createElement("article", null, /*#__PURE__*/_react.default.createElement("h4", null, "Richard Watts"), /*#__PURE__*/_react.default.createElement("p", null, "\"Manage allows us to provides structure and process. It keeps us orgaized and focused. I can't stop recommending them to everyone I talk to!\"")), /*#__PURE__*/_react.default.createElement("article", null, /*#__PURE__*/_react.default.createElement("h4", null, "Shanai Gough"), /*#__PURE__*/_react.default.createElement("p", null, "\"Their software allows us to track, manage and collaborate on our project from anywhere. It keeps the whole team insync withoout being intrusive.\""))), /*#__PURE__*/_react.default.createElement("button", {
+  }, /*#__PURE__*/_react.default.createElement("article", null, /*#__PURE__*/_react.default.createElement("img", {
+    src: _avatarAnisha.default,
+    alt: "anisha"
+  }), /*#__PURE__*/_react.default.createElement("h4", null, "Anisha Li"), /*#__PURE__*/_react.default.createElement("p", null, "\"Manage has supercharged our team's workflow. The ability to maintain visibility on larger milestones at all time keeps everyone motivated.\"")), /*#__PURE__*/_react.default.createElement("article", null, /*#__PURE__*/_react.default.createElement("img", {
+    src: _avatarAli.default,
+    alt: "ali"
+  }), /*#__PURE__*/_react.default.createElement("h4", null, "Ali Bravo"), /*#__PURE__*/_react.default.createElement("p", null, "\"We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.\"")), /*#__PURE__*/_react.default.createElement("article", null, /*#__PURE__*/_react.default.createElement("img", {
+    src: _avatarRichard.default,
+    alt: "richard"
+  }), /*#__PURE__*/_react.default.createElement("h4", null, "Richard Watts"), /*#__PURE__*/_react.default.createElement("p", null, "\"Manage allows us to provides structure and process. It keeps us orgaized and focused. I can't stop recommending them to everyone I talk to!\"")), /*#__PURE__*/_react.default.createElement("article", null, /*#__PURE__*/_react.default.createElement("img", {
+    src: _avatarShanai.default,
+    alt: "shanai"
+  }), /*#__PURE__*/_react.default.createElement("h4", null, "Shanai Gough"), /*#__PURE__*/_react.default.createElement("p", null, "\"Their software allows us to track, manage and collaborate on our project from anywhere. It keeps the whole team insync withoout being intrusive.\""))), /*#__PURE__*/_react.default.createElement("button", {
     type: "button",
     className: "get_started"
   }, "Get Started")));
 }
-},{"react":"node_modules/react/index.js"}],"components/Third_section.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../images/avatar-anisha.png":"images/avatar-anisha.png","../images/avatar-ali.png":"images/avatar-ali.png","../images/avatar-richard.png":"images/avatar-richard.png","../images/avatar-shanai.png":"images/avatar-shanai.png"}],"components/Third_section.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -30130,7 +30166,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52017" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51813" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
