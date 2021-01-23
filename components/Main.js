@@ -1,10 +1,18 @@
-import React from 'react'
+import React from 'react';
+import First_section from "./First_section";
+import Second_section from "./Second_section";
+import Third_section from "./Third_section";
 
-export default function Main() {
+function Main() {
     return (
         <main>
-            <section></section>
-            <section></section>
+            <div className="container">
+                <First_section />
+                <Second_section />
+                <Third_section />
+            </div>
         </main>
     )
 }
+
+export default Main

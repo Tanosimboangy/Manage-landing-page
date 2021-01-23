@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "BeVietnam_bold";
+  src: local(BeVietnam_bold), url(/BeVietnam-Bold.bb9553c1.woff2) format("woff2"), url(/BeVietnam-Bold.04861bf2.woff) format("woff2");
+}
+@font-face {
+  font-family: "BeVietnam_Medium";
+  src: local(BeVietnam_Medium), url(/BeVietnam-Medium.a46ae05e.woff2) format("woff2"), url(/BeVietnam-Medium.843d4520.woff) format("woff");
+}
+@font-face {
+  font-family: "BeVietnam_Regular";
+  src: local(BeVietnam_Regular), url(/BeVietnam-Regular.ddb159dd.woff2) format("woff2"), url(/BeVietnam-Regular.0a86ab5c.woff) format("woff");
+}
 body {
   margin: 0;
 }
@@ -25,7 +37,6 @@ header .container .sub_header {
   padding-top: 30px;
   padding-bottom: 30px;
   position: relative;
-  background: white;
 }
 header .container .sub_header .header_navigation, header .container .sub_header .get_started {
   display: none;
@@ -90,8 +101,6 @@ header .container .sub_header .header_input:checked ~ .close_menu svg {
 }
 header .container .header_details {
   padding-bottom: 80px;
-  background-color: #fafafa;
-  background-image: url();
 }
 header .container .header_details .container {
   max-width: 90%;
@@ -219,6 +228,49 @@ header .container .header_details .container .get_started {
   header .container .header_details .container p {
     font-size: 23px;
     max-width: 500px;
+  }
+}
+.first_section .container .header {
+  max-width: 90%;
+  margin: auto;
+}
+.first_section .container .header h2 {
+  font-family: "BeVietnam_bold";
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  color: #242d52;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.first_section .container .header p {
+  font-family: "BeVietnam_Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  color: #9095a7;
+  text-align: center;
+  padding-bottom: 20px;
+}
+@media (min-width: 720px) {
+  .first_section .container {
+    max-width: 80%;
+    margin: auto;
+  }
+  .first_section .container .header {
+    max-width: 100%;
+    margin: auto;
+  }
+  .first_section .container .header h2 {
+    text-align: left;
+    padding-bottom: 20px;
+    max-width: 400px;
+    line-height: 40px;
+  }
+  .first_section .container .header p {
+    text-align: left;
+    padding-bottom: 0;
+    max-width: 340px;
   }
 }
 

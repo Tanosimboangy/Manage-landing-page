@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./..\\Fonts\\BeVietnam-Bold.woff2":[["BeVietnam-Bold.bb9553c1.woff2","Fonts/BeVietnam-Bold.woff2"],"Fonts/BeVietnam-Bold.woff2"],"./..\\Fonts\\BeVietnam-Bold.woff":[["BeVietnam-Bold.04861bf2.woff","Fonts/BeVietnam-Bold.woff"],"Fonts/BeVietnam-Bold.woff"],"./..\\Fonts\\BeVietnam-Medium.woff2":[["BeVietnam-Medium.a46ae05e.woff2","Fonts/BeVietnam-Medium.woff2"],"Fonts/BeVietnam-Medium.woff2"],"./..\\Fonts\\BeVietnam-Medium.woff":[["BeVietnam-Medium.843d4520.woff","Fonts/BeVietnam-Medium.woff"],"Fonts/BeVietnam-Medium.woff"],"./..\\Fonts\\BeVietnam-Regular.woff2":[["BeVietnam-Regular.ddb159dd.woff2","Fonts/BeVietnam-Regular.woff2"],"Fonts/BeVietnam-Regular.woff2"],"./..\\Fonts\\BeVietnam-Regular.woff":[["BeVietnam-Regular.0a86ab5c.woff","Fonts/BeVietnam-Regular.woff"],"Fonts/BeVietnam-Regular.woff"],"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64258" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52017" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

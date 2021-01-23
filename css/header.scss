@@ -10,7 +10,6 @@ header {
             padding-top: 30px;
             padding-bottom: 30px;
             position: relative;
-            background: hsl(0, 0%, 100%);
             .header_navigation, .get_started {
                 display: none;
             }
@@ -75,8 +74,6 @@ header {
         }
         .header_details {
             padding-bottom: 80px;
-            background-color: hsl(0, 0%, 98%);
-            background-image: url();
             .container {
                 max-width: 90%;
                 margin: auto;
