@@ -438,17 +438,14 @@ header .container .header_details .container div .get_started:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 10px;
-    overflow-x: scroll;
-    overflow: auto;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
   }
   .second_section .container .articles article {
     position: relative;
     background-color: #fafafa;
     margin-left: 0;
     margin-right: 0;
-    padding: 0;
-    margin-bottom: 50px;
   }
 }
 
