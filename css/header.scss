@@ -91,7 +91,7 @@ header {
                         font-weight: 700;
                         font-size: 40px;
                         color: hsl(233, 26%, 24%);
-                        padding-top: 2  0px;
+                        padding-top: 40px;
                         padding-bottom: 40px;
                         max-width: 450px;
                         text-align: left;
@@ -114,11 +114,15 @@ header {
                         color: hsl(0, 0%, 100%);
                         background:  hsl(12, 88%, 59%);
                         outline: none;
-                        padding:15px 30px;
                         box-sizing: border-box;
                         border: none;
                         cursor: pointer;
-                        border-radius: 21px;
+                        padding:12.5px 30px;
+                        font-family: "BeVietnam_Bold";
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        border-radius: 30px;
                     }
                     .get_started:hover{
                         background:  hsl(12, 72%, 69%);
@@ -168,7 +172,7 @@ header {
     }
 }
 
-@media(min-width: 900px) {
+@media(min-width: 950px) {
     header {
         .container {
             .sub_header {
@@ -229,11 +233,15 @@ header {
                     color: hsl(0, 0%, 100%);
                     background:  hsl(12, 88%, 59%);
                     outline: none;
-                    padding:15px 20px;
+                    padding:12.5px 30px;
                     box-sizing: border-box;
                     border: none;
                     cursor: pointer;
-                    border-radius: 21px;
+                    font-family: "BeVietnam_Bold";
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    border-radius: 30px;
                 }
                 .get_started:hover{
                     background:  hsl(12, 72%, 69%);
