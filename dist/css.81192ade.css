@@ -135,6 +135,7 @@ header .container .header_details .container div p {
   opacity: 0.8;
   padding-bottom: 40px;
   max-width: 350px;
+  margin-right: auto;
   text-align: left;
 }
 header .container .header_details .container div .get_started {
@@ -257,7 +258,7 @@ header .container .header_details .container div .get_started:hover {
   }
 }
 .first_section .container {
-  padding-bottom: 40px;
+  padding-bottom: 80px;
 }
 .first_section .container .header {
   margin-left: 5%;
@@ -337,7 +338,7 @@ header .container .header_details .container div .get_started:hover {
   }
   .first_section .container .header h2 {
     text-align: left;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     line-height: 40px;
   }
   .first_section .container .header p {
@@ -359,6 +360,9 @@ header .container .header_details .container div .get_started:hover {
     margin-left: 56px;
   }
 }
+.second_section {
+  padding-bottom: 80px;
+}
 .second_section .container {
   display: flex;
   flex-direction: column;
@@ -373,6 +377,9 @@ header .container .header_details .container div .get_started:hover {
   text-align: center;
   line-height: 36px;
   padding-bottom: 80px;
+}
+.second_section .container .articles {
+  padding-top: 40px;
 }
 .second_section .container .articles article {
   position: relative;
@@ -431,14 +438,14 @@ header .container .header_details .container div .get_started:hover {
 
 @media (min-width: 720px) {
   .second_section .container {
-    max-width: 80%;
+    max-width: 100%;
     margin: auto;
   }
   .second_section .container .articles {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin-bottom: 50px;
   }
   .second_section .container .articles article {
@@ -446,6 +453,61 @@ header .container .header_details .container div .get_started:hover {
     background-color: #fafafa;
     margin-left: 0;
     margin-right: 0;
+  }
+}
+.third_section {
+  background-color: #f25f3a;
+  padding: 80px 0;
+}
+.third_section .container {
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.third_section .container h2 {
+  font-family: "BeVietnam_bold";
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.third_section .container button {
+  background-color: white;
+  color: #f25f3a;
+  display: block;
+  text-align: center;
+  outline: none;
+  padding: 15px 30px;
+  box-sizing: border-box;
+  border: none;
+  cursor: pointer;
+  border-radius: 21px;
+  align-items: center;
+}
+
+@media (min-width: 720px) {
+  .third_section {
+    background-color: #f25f3a;
+    padding: 80px 0;
+  }
+  .third_section .container {
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .third_section .container h2 {
+    text-align: left;
+    max-width: 450px;
+  }
+  .third_section .container button {
+    margin-top: 16px;
   }
 }
 

@@ -1,4 +1,5 @@
 .second_section {
+    padding-bottom: 80px;
     .container {
         display: flex;
         flex-direction: column;
@@ -14,6 +15,7 @@
             padding-bottom: 80px;
         }
         .articles {
+            padding-top: 40px;
             article {
                 position: relative;
                 background-color:  hsl(0, 0%, 98%);
@@ -75,13 +77,13 @@
 @media(min-width: 720px) {
     .second_section {
         .container {
-            max-width: 80%;
+            max-width: 100%;
             margin: auto;
             .articles {
                 display: flex;
                 flex-direction: row;
-                justify-content: space-between;
                 flex-wrap: wrap;
+                justify-content: space-between;
                 margin-bottom: 50px;
                 article {
                     position: relative;
