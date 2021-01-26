@@ -510,7 +510,7 @@ header .container .header_details .container div .get_started:hover {
     padding: 80px 0;
   }
   .third_section .container {
-    max-width: 90%;
+    max-width: 80%;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -545,7 +545,7 @@ header .container .header_details .container div .get_started:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 40px;
+  gap: 30px;
   padding-bottom: 50px;
 }
 .footer .container div:nth-of-type(2) .footer_links li a img {
@@ -580,7 +580,6 @@ header .container .header_details .container div .get_started:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
   padding-bottom: 50px;
 }
 .footer .container form input {
@@ -593,6 +592,7 @@ header .container .header_details .container div .get_started:hover {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
+  width: 100%;
   margin-right: 10px;
 }
 .footer .container form button {
@@ -607,6 +607,55 @@ header .container .header_details .container div .get_started:hover {
   color: white;
   text-align: center;
   padding: 10px 20px;
+}
+
+@media (min-width: 800px) {
+  .footer {
+    padding-top: 50px;
+  }
+  .footer .container {
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .footer .container div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+    padding-right: 20px;
+  }
+  .footer .container div:nth-of-type(2) .footer_links {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 0;
+  }
+  .footer .container div:nth-of-type(2) .footer_links li a img {
+    width: 20px;
+    height: 20px;
+  }
+  .footer .container div:nth-of-type(2) svg {
+    align-self: auto;
+    padding-bottom: 80px;
+  }
+  .footer .container div:nth-of-type(2) svg:hover {
+    fill: #f25f3a;
+  }
+  .footer .container .footer_navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 20px;
+  }
+  .footer .container .footer_navigation ul li a {
+    white-space: nowrap;
+  }
+  .footer .container .footer_navigation ul li a:hover {
+    color: #f25f3a;
+  }
 }
 
 /*# sourceMappingURL=/css.81192ade.css.map */
