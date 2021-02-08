@@ -153,6 +153,7 @@ header .container .header_details .container div .get_started {
   font-weight: 700;
   font-size: 16px;
   border-radius: 30px;
+  white-space: nowrap;
 }
 header .container .header_details .container div .get_started:hover {
   background: #e98e77;
@@ -260,6 +261,7 @@ header .container .header_details .container div .get_started:hover {
     font-weight: 700;
     font-size: 16px;
     border-radius: 30px;
+    white-space: nowrap;
   }
   header .container .sub_header .get_started:hover {
     background: #e98e77;
@@ -442,6 +444,7 @@ header .container .header_details .container div .get_started:hover {
   flex-direction: column;
   align-items: center;
   margin-bottom: 40px;
+  white-space: nowrap;
 }
 .second_section .container .get_started:hover {
   background: #e98e77;
@@ -462,8 +465,8 @@ header .container .header_details .container div .get_started:hover {
   .second_section .container .articles article {
     position: relative;
     background-color: #fafafa;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0;
+    margin-bottom: 50px;
   }
 }
 .third_section {
@@ -639,7 +642,7 @@ header .container .header_details .container div .get_started:hover {
   }
   .footer .container div:nth-of-type(2) svg {
     align-self: auto;
-    padding-bottom: 80px;
+    padding-bottom: 104px;
   }
   .footer .container div:nth-of-type(2) svg:hover {
     fill: #f25f3a;
