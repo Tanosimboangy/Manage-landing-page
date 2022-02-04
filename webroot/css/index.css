@@ -262,8 +262,8 @@ header .container .header_details {
       font-weight: 700;
       color: #242d52;
       line-height: 30px;
-      max-width: 380px;
-      background-color: #ffefeb;
+      max-width: 450px;
+      margin: auto;
       border-top-left-radius: 16px;
       border-bottom-left-radius: 16px;
       padding-bottom: 2px;
@@ -279,8 +279,9 @@ header .container .header_details {
       font-style: normal;
       font-weight: 400;
       padding-top: 10px;
-      max-width: 360px;
-      color: #3e4048; }
+      color: #3e4048;
+      max-width: 450px;
+      margin: auto; }
   .first_section .container .articles article:not(:last-of-type) {
     padding-bottom: 30px; }
 
@@ -307,9 +308,9 @@ header .container .header_details {
     .first_section .container .articles article {
       margin: 0; }
       .first_section .container .articles article h3 {
-        background-color: white;
         border-radius: 0;
-        padding-bottom: 0; }
+        padding-bottom: 0;
+        margin: 0; }
       .first_section .container .articles article p {
         max-width: 450px;
         margin-left: 56px; } }
