@@ -21,6 +21,10 @@ body {
     text-decoration: none; }
   body h1, body h2, body h3, body h4, body h5, body h6, body p {
     margin: 0; }
+  body button {
+    border: none;
+    outline: none;
+    cursor: pointer; }
 
 header .container .sub_header {
   max-width: 90%;
@@ -394,10 +398,9 @@ header .container .header_details {
     max-width: 100%;
     margin: auto; }
     .second_section .container .articles {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
       margin-bottom: 50px; }
       .second_section .container .articles article {
         position: relative;
