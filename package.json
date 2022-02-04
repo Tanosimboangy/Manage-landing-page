@@ -4,7 +4,10 @@
   "description": "![Design preview for the Manage landing page coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass scss -o webroot/css",
+    "scss:watch": "npm run scss && node-sass scss -w -o webroot/css",
+    "start": "npm run scss:watch"
   },
   "repository": {
     "type": "git",
@@ -16,11 +19,10 @@
     "url": "https://github.com/Tanosimboangy/iwt2-manage-landing-page/issues"
   },
   "homepage": "https://github.com/Tanosimboangy/iwt2-manage-landing-page#readme",
-  "dependencies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
-  },
   "devDependencies": {
     "sass": "^1.32.5"
+  },
+  "dependencies": {
+    "node-sass": "^7.0.1"
   }
 }
