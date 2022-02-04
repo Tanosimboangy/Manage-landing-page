@@ -41,7 +41,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository to your local machine
-$ git clone https://github.com/Tanosimboangy/Manage-landing-page.
+$ git clone https://github.com/Tanosimboangy/Manage-landing-page.git
 
 # Install dependencies:
 - npm install or yarn install
